@@ -52,7 +52,7 @@ class File extends \SPLFileInfo
      */
     public function getFullPathHash()
     {
-        return $this->crc32b($this->fullPath);
+        return hash('crc32b', $this->fullPath);
     }
 
     /**
@@ -165,17 +165,5 @@ class File extends \SPLFileInfo
         } catch (\Exception $e) {
             throw new \Exception("Error Processing Request", $e);
         }
-    }
-
-    /**
-     * 8 character long hash
-     * ideal for filename checksums
-     *
-     * @param  string $value
-     * @return string
-     */
-    private function crc32b($value)
-    {
-        return hash('crc32b', $value);
     }
 }
