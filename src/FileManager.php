@@ -1,5 +1,20 @@
 <?php
 
+/*
+ * This file is part of the File Manager.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace src;
+
+use src\IndexFile;
+use src\File;
+
+/**
+ * @author Thijs De Paepe <thijs.dp@gmail.com>
+ */
 class FileManager
 {
     private $indexFile;
@@ -11,11 +26,17 @@ class FileManager
         $this->directory = rtrim($directory, DIRECTORY_SEPARATOR).DIRECTORY_SEPARATOR;
 
         if (!is_dir($this->directory)) {
-            mkdir($this->directory);
-
-            # prep the directory
-            #$this->scan()->store();
+            throw new Exception("Error Processing Request", 1);
         }
+    }
+
+    /**
+     * Returns a array of Directories
+     * @return array
+     */
+    public function getDirectories()
+    {
+        return explode(DIRECTORY_SEPARATOR, $this->directory);
     }
 
     private function indexFile()
@@ -33,6 +54,9 @@ class FileManager
         return $this->indexFile;
     }
 
+    /**
+     * Scans the Directory for Files
+     */
     public function scan()
     {
         $indexFile = $this->indexFile();
@@ -66,7 +90,7 @@ class FileManager
             return $file;
         }
         $file = new File($this->directory . $filename);
-        if ($file->exists()) {
+        if ($file->isFile()) {
             $this->addFile($file);
             return $file;
         }
@@ -99,7 +123,7 @@ class FileManager
     {
         if ($file = $this->get($filename)) {
             $this->indexFile()->remove($file);
-            $file->remove();
+            $file->delete();
         }
     }
 
@@ -124,19 +148,29 @@ class FileManager
     {
         $tmp = [];
         $files = array_slice($this->indexFile()->getFiles(), $offset, $limit);
-        foreach ($files as $key => $file) {
-            $tmp[$key] = $this->indexFile()->returnFile($file);
+        foreach ($files as $hash => $file) {
+            $tmp[$hash] = $this->indexFile()->returnFile($file);
         }
         return $tmp;
     }
 
-    // File System
-
-    public function addFile(File $file)
+    /**
+     * Adds a File to the Index
+     *
+     * @param File $file [description]
+     */
+    private function addFile(File $file)
     {
         $this->indexFile()->add($file);
     }
 
+    /**
+     * md5 checksums of 2 files
+     *
+     * @param  File    $file1
+     * @param  File    $file2
+     * @return boolean
+     */
     public function isIndentical(File $file1, File $file2)
     {
         return ($file1->getHash() === $file2->getHash());

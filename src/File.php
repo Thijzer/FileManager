@@ -163,7 +163,7 @@ class File extends \SPLFileInfo
             fwrite($localFile, $this->getContent());
             fclose($localFile);
         } catch (\Exception $e) {
-            throw new \Exception("Error Processing Request", $e);
+            throw new \Exception("Error Saving File ".$this->fullPath, $e);
         }
     }
 }
