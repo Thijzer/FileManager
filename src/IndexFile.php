@@ -59,6 +59,7 @@ class IndexFile
 
     /**
      * @param  string Filename
+     *
      * @return File
      */
     public function getFile($filename)
@@ -119,6 +120,7 @@ class IndexFile
 
     /**
      * Remove File from Index
+     *
      * @param  File   $file
      */
     public function remove(File $file)
@@ -132,6 +134,7 @@ class IndexFile
      * Returns a single File
      *
      * @param  array  $fileInfo set of properties
+     *
      * @return File   new File
      */
     public function returnFile(array $fileInfo)

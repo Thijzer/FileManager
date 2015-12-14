@@ -65,7 +65,7 @@ class FileManager
             return !is_dir($this->directory.$item);
         }), $this->systemFiles);
 
-        $files = Arrays::indexBy('filename', $indexFile->getFiles());
+        $files = ArrayNewIndex('filename', $indexFile->getFiles());
         $newFiles = array_diff($foundFiles, array_keys($files));
         $removedFiles = array_diff(array_keys($files), $foundFiles);
 
