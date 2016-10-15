@@ -1,0 +1,3 @@
+<?php
+
+$fm = new FileManager();

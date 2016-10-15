@@ -1,0 +1,1417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5a6bf64c-9e56-43d2-9ec8-4aa3a06186f5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/old/DirController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/old/FileCommandCollection.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FileManager/ActionableInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FileManager/Adapter/AbstractAdapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FileManager/Adapter/FTPAdapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FileManager/Adapter/FileAdapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FileManager/Adapter/LFSAdapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FileManager/Adapter/LFSFileAdapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FileManager/Client/FtpClient.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FileManager/Commands/CommandRecorder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FileManager/Commands/DirAction.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FileManager/Commands/DirCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FileManager/Commands/FileAction.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FileManager/Commands/FileCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FileManager/File.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FileManager/FileExtension/ZipFile.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FileManager/FileManager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FileManager/FileManagerInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FileManager/FilePath.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FileManager/Functions.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FileManager/Hash.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FileManager/IndexInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FileManager/Indexer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FileManager/Paginator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web" afterPath="$PROJECT_DIR$/web" />
+    </list>
+    <ignored path="filemanager.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="filemanager" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="DirCommand.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/FileManager/Commands/DirCommand.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <marker date="1476470518445" expanded="true" signature="362:1407" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/web/src/Commands/DirectoryCommand.php" />
+        <option value="$PROJECT_DIR$/web/src/Dir.php" />
+        <option value="$PROJECT_DIR$/web/src/Commands/DirAction.php" />
+        <option value="$PROJECT_DIR$/web/src/Commands/FileAction.php" />
+        <option value="$PROJECT_DIR$/web/src/Commands/FileCommand.php" />
+        <option value="$PROJECT_DIR$/web/src/File_OLD.php" />
+        <option value="$PROJECT_DIR$/web/src/Commands/DirCommand.php" />
+        <option value="$PROJECT_DIR$/web/src/Commands/DirController.php" />
+        <option value="$PROJECT_DIR$/web/src/Commands/FileController.php" />
+        <option value="$PROJECT_DIR$/web/src/File.php" />
+        <option value="$PROJECT_DIR$/web/src/FileManager.php" />
+        <option value="$PROJECT_DIR$/web/src/Commands/CommandSet.php" />
+        <option value="$PROJECT_DIR$/web/src/Adapter/LFSAdapter.php" />
+        <option value="$PROJECT_DIR$/src/FileManager.php" />
+        <option value="$PROJECT_DIR$/src/Commands/FileCommand.php" />
+        <option value="$PROJECT_DIR$/src/File.php" />
+        <option value="$PROJECT_DIR$/src/Adapter/FileAdapter.php" />
+        <option value="$PROJECT_DIR$/web/index.php" />
+        <option value="$PROJECT_DIR$/src/FileManager/Adapter/AbstractAdapter.php" />
+        <option value="$PROJECT_DIR$/src/FileManager/Commands/CommandSet.php" />
+        <option value="$PROJECT_DIR$/src/FileManager/FileId.php" />
+        <option value="$PROJECT_DIR$/copyright.md" />
+        <option value="$PROJECT_DIR$/src/FileManager/Functions.php" />
+        <option value="$PROJECT_DIR$/src/FileManager/ActionableDirectoryInterface.php" />
+        <option value="$PROJECT_DIR$/src/FileManager/ActionableFileInterface.php" />
+        <option value="$PROJECT_DIR$/src/FileManager/ActionableInterface.php" />
+        <option value="$PROJECT_DIR$/src/FileManager/Adapter/FTPAdapter.php" />
+        <option value="$PROJECT_DIR$/src/FileManager/Adapter/FileAdapter.php" />
+        <option value="$PROJECT_DIR$/src/FileManager/Commands/DirController.php" />
+        <option value="$PROJECT_DIR$/src/FileManager/Indexer.php" />
+        <option value="$PROJECT_DIR$/src/FileManager/IndexInterface.php" />
+        <option value="$PROJECT_DIR$/src/FileManager/Commands/DirAction.php" />
+        <option value="$PROJECT_DIR$/src/FileManager/Commands/FileController.php" />
+        <option value="$PROJECT_DIR$/src/FileManager/FileExtension/ZipFile.php" />
+        <option value="$PROJECT_DIR$/src/FileManager/Commands/CommandCollection.php" />
+        <option value="$PROJECT_DIR$/old/FileController.php" />
+        <option value="$PROJECT_DIR$/old/FileCommandCollection.php" />
+        <option value="$PROJECT_DIR$/old/DirController.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/phpunit.xml.dist" />
+        <option value="$PROJECT_DIR$/src/Tests/FileManager/test_dir/test_file.php" />
+        <option value="$PROJECT_DIR$/src/FileManager/Commands/FileAction.php" />
+        <option value="$PROJECT_DIR$/src/FileManager/File.php" />
+        <option value="$PROJECT_DIR$/src/FileManager/FilePath.php" />
+        <option value="$PROJECT_DIR$/src/Tests/FileManager/FileManagerTest.php" />
+        <option value="$PROJECT_DIR$/src/FileManager/Commands/CommandRecorder.php" />
+        <option value="$PROJECT_DIR$/src/FileManager/Commands/Command.php" />
+        <option value="$PROJECT_DIR$/src/FileManager/Commands/FileCommand.php" />
+        <option value="$PROJECT_DIR$/src/FileManager/Adapter/LFSAdapter.php" />
+        <option value="$PROJECT_DIR$/src/FileManager/FileManager.php" />
+        <option value="$PROJECT_DIR$/src/FileManager/Commands/DirCommand.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="-4" />
+    <option name="width" value="1366" />
+    <option name="height" value="772" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tests" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FileManager" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tests" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FileManager" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test_dir" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FileManager" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FileManager" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Commands" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FileManager" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Adapter" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/old" />
+      <recent name="$PROJECT_DIR$/src/FileManager" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/web/src/Commands" />
+      <recent name="$PROJECT_DIR$/web/src/Client" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/FileManager" />
+      <recent name="$PROJECT_DIR$/" />
+      <recent name="$PROJECT_DIR$/web/src" />
+      <recent name="$PROJECT_DIR$/web/src/Commands" />
+      <recent name="$PROJECT_DIR$/web/src/Adapter" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5a6bf64c-9e56-43d2-9ec8-4aa3a06186f5" name="Default" comment="" />
+      <created>1461776553324</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1461776553324</updated>
+      <workItem from="1461776554542" duration="51834000" />
+      <workItem from="1462562241389" duration="29000" />
+      <workItem from="1462562281816" duration="7000" />
+      <workItem from="1462562353745" duration="43000" />
+      <workItem from="1462562586086" duration="196000" />
+      <workItem from="1462562851107" duration="50000" />
+      <workItem from="1462563331018" duration="79000" />
+      <workItem from="1462568894892" duration="8000" />
+      <workItem from="1462568918066" duration="7000" />
+      <workItem from="1462618465528" duration="171000" />
+      <workItem from="1462620733980" duration="601000" />
+      <workItem from="1462731165751" duration="7000" />
+      <workItem from="1465594745664" duration="9297000" />
+      <workItem from="1465845169734" duration="2111000" />
+      <workItem from="1465848890781" duration="57000" />
+      <workItem from="1465848982891" duration="958000" />
+      <workItem from="1465849968636" duration="249000" />
+      <workItem from="1465850284289" duration="1384000" />
+      <workItem from="1476208334689" duration="148000" />
+      <workItem from="1476208523147" duration="21669000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="88905000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="129" width="1166" height="539" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15817901" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Commands/FileAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Commands/FileCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1032">
+          <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Commands/FileCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1032">
+          <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Commands/FileCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1032">
+          <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Commands/FileCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1032">
+          <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Commands/FileCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1032">
+          <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Commands/FileCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1032">
+          <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Commands/FileCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1032">
+          <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Commands/FileCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1032">
+          <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Commands/FileCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1608">
+          <caret line="67" column="1" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/Lookup.php" />
+    <entry file="file://$PROJECT_DIR$/web/src/FileManagerService.php" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_0.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="72">
+            <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Client/FtpClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3816">
+          <caret line="299" column="26" selection-start-line="299" selection-start-column="22" selection-end-line="299" selection-end-column="26" />
+          <folding>
+            <marker date="1476210578182" expanded="true" signature="58:785" ph=" FTP Client for PHP ..." />
+            <marker date="1476210578182" expanded="true" signature="803:12900" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="975:1024" ph=" FTP connection ..." />
+            <marker date="1476210578182" expanded="true" signature="1067:1142" ph=" passive mode active / to be activated ..." />
+            <marker date="1476210578182" expanded="true" signature="1185:1301" ph=" verbose mode ..." />
+            <marker date="1476210578182" expanded="true" signature="1344:1374" ph=" ..." />
+            <marker date="1476210578182" expanded="true" signature="1416:1490" ph=" Constructor ..." />
+            <marker date="1476210578182" expanded="true" signature="1526:1655" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="1574:1648" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="1664:1841" ph=" Opens a FTP connection ..." />
+            <marker date="1476210578182" expanded="true" signature="1919:2271" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="1945:2028" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="2036:2115" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="2158:2221" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="2229:2264" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="2280:2415" ph=" Logins to FTP Server ..." />
+            <marker date="1476210578182" expanded="true" signature="2484:2845" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="2595:2656" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="2664:2838" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="2740:2801" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="2854:2916" ph=" Closes FTP connection ..." />
+            <marker date="1476210578182" expanded="true" signature="2946:3114" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="3035:3107" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="3123:3228" ph=" Changes passive mode,,, ..." />
+            <marker date="1476210578182" expanded="true" signature="3275:3571" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="3350:3541" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="3448:3531" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="3608:3676" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="3685:3710" ph=" @return int ..." />
+            <marker date="1476210578182" expanded="true" signature="3742:3823" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="3832:3928" ph=" Changes the current directory to the specified one ..." />
+            <marker date="1476210578182" expanded="true" signature="3978:4181" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="4079:4151" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="4190:4267" ph=" Changes to the parent directory ..." />
+            <marker date="1476210578182" expanded="true" signature="4307:4498" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="4395:4468" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="4507:4584" ph=" Returns the current directory name ..." />
+            <marker date="1476210578182" expanded="true" signature="4621:4814" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="4708:4782" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="4823:4927" ph=" Creates a directory ..." />
+            <marker date="1476210578182" expanded="true" signature="4977:5180" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="5078:5150" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="5189:5293" ph=" Removes a directory ..." />
+            <marker date="1476210578182" expanded="true" signature="5343:5546" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="5444:5516" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="5555:5682" ph=" Returns a list of files in the given directory ..." />
+            <marker date="1476210578182" expanded="true" signature="5730:5958" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="5831:5901" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="5967:6097" ph=" @param string $parameters ..." />
+            <marker date="1476210578182" expanded="true" signature="6169:6387" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="6285:6355" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="6396:6508" ph=" Deletes a file on the FTP server ..." />
+            <marker date="1476210578182" expanded="true" signature="6544:6744" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="6641:6714" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="6753:6901" ph=" Returns the size of the given file. ..." />
+            <marker date="1476210578182" expanded="true" signature="6941:7134" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="7035:7104" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="7143:7305" ph=" Returns the last modified time of the given file. ..." />
+            <marker date="1476210578182" expanded="true" signature="7369:7584" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="7484:7534" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="7542:7577" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="7593:7752" ph=" Renames a file or a directory on the FTP server ..." />
+            <marker date="1476210578182" expanded="true" signature="7805:7916" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="7925:8132" ph=" Downloads a file from the FTP server ..." />
+            <marker date="1476210578182" expanded="true" signature="8204:8531" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="8372:8502" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="8540:8758" ph=" Uploads from an open file to the FTP server ..." />
+            <marker date="1476210578182" expanded="true" signature="8829:9092" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="8998:9062" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="9101:9333" ph=" Downloads a file from the FTP server and saves to an open file ..." />
+            <marker date="1476210578182" expanded="true" signature="9403:9665" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="9571:9635" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="9674:9891" ph=" Uploads from an open file to the FTP server ..." />
+            <marker date="1476210578182" expanded="true" signature="9960:10221" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="10127:10191" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="10230:10399" ph=" Retrieves various runtime behaviours of the current FTP stream ..." />
+            <marker date="1476210578182" expanded="true" signature="10440:10799" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="10473:10792" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="10552:10679" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="10701:10783" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="10808:10979" ph=" Set miscellaneous runtime FTP options ..." />
+            <marker date="1476210578182" expanded="true" signature="11028:11646" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="11061:11570" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="11102:11262" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="11137:11238" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="11301:11457" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="11341:11433" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="11479:11561" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="11655:11777" ph=" Allocates space for a file to be uploaded ..." />
+            <marker date="1476210578182" expanded="true" signature="11819:12013" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="11919:11983" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="12022:12163" ph=" Set permissions on a file via FTP ..." />
+            <marker date="1476210578182" expanded="true" signature="12209:12420" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="12316:12390" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="12429:12561" ph=" Requests execution of a command on the FTP server ..." />
+            <marker date="1476210578182" expanded="true" signature="12598:12794" ph="{...}" />
+            <marker date="1476210578182" expanded="true" signature="12696:12764" ph="..." />
+            <marker date="1476210578182" expanded="true" signature="12803:12827" ph=" Destructor ..." />
+            <marker date="1476210578182" expanded="true" signature="12862:12898" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/copyright.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="162">
+            <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/ActionableDirectoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <marker date="1476211316384" expanded="true" signature="69:239" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/SPL_c1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding>
+            <marker date="1468292929000" expanded="true" signature="33:204" ph=" The SplFileInfo class offers a high-level object oriented interface to ..." />
+            <marker date="1468292929000" expanded="true" signature="227:9005" ph="..." />
+            <marker date="1468292929000" expanded="true" signature="240:417" ph=" Construct a new SplFileInfo object ..." />
+            <marker date="1468292929000" expanded="true" signature="484:674" ph=" Gets the path without filename ..." />
+            <marker date="1468292929000" expanded="true" signature="727:900" ph=" Gets the filename ..." />
+            <marker date="1468292929000" expanded="true" signature="957:1209" ph=" Gets the file extension ..." />
+            <marker date="1468292929000" expanded="true" signature="1267:1607" ph=" Gets the base name of the file ..." />
+            <marker date="1468292929000" expanded="true" signature="1678:1867" ph=" Gets the path to the file ..." />
+            <marker date="1468292929000" expanded="true" signature="1924:2103" ph=" Gets file permissions ..." />
+            <marker date="1468292929000" expanded="true" signature="2157:2364" ph=" Gets the inode for the file ..." />
+            <marker date="1468292929000" expanded="true" signature="2418:2590" ph=" Gets file size ..." />
+            <marker date="1468292929000" expanded="true" signature="2643:2839" ph=" Gets the owner of the file ..." />
+            <marker date="1468292929000" expanded="true" signature="2893:3082" ph=" Gets the file group ..." />
+            <marker date="1468292929000" expanded="true" signature="3136:3342" ph=" Gets last access time of the file ..." />
+            <marker date="1468292929000" expanded="true" signature="3396:3617" ph=" Gets the last modified time ..." />
+            <marker date="1468292929000" expanded="true" signature="3671:3876" ph=" Gets the inode change time ..." />
+            <marker date="1468292929000" expanded="true" signature="3930:4182" ph=" Gets file type ..." />
+            <marker date="1468292929000" expanded="true" signature="4235:4439" ph=" Tells if the entry is writable ..." />
+            <marker date="1468292929000" expanded="true" signature="4495:4694" ph=" Tells if file is readable ..." />
+            <marker date="1468292929000" expanded="true" signature="4750:4959" ph=" Tells if the file is executable ..." />
+            <marker date="1468292929000" expanded="true" signature="5017:5274" ph=" Tells if the object references a regular file ..." />
+            <marker date="1468292929000" expanded="true" signature="5326:5530" ph=" Tells if the file is a directory ..." />
+            <marker date="1468292929000" expanded="true" signature="5581:5788" ph=" Tells if the file is a link ..." />
+            <marker date="1468292929000" expanded="true" signature="5840:6044" ph=" Gets the target of a link ..." />
+            <marker date="1468292929000" expanded="true" signature="6103:6293" ph=" Gets absolute path to file ..." />
+            <marker date="1468292929000" expanded="true" signature="6350:6704" ph=" Gets an SplFileInfo object for the file ..." />
+            <marker date="1468292929000" expanded="true" signature="6779:7144" ph=" Gets an SplFileInfo object for the path ..." />
+            <marker date="1468292929000" expanded="true" signature="7219:7882" ph=" Gets an SplFileObject object for the file ..." />
+            <marker date="1468292929000" expanded="true" signature="7989:8311" ph=" Sets the class name used with &lt;b&gt;SplFileInfo::openFile&lt;/b&gt; ..." />
+            <marker date="1468292929000" expanded="true" signature="8387:8683" ph=" Sets the class used with getFileInfo and getPathInfo ..." />
+            <marker date="1468292929000" expanded="true" signature="8759:8960" ph=" Returns the path to the file as a string ..." />
+            <marker date="1468292929000" expanded="true" signature="9011:9189" ph=" The DirectoryIterator class provides a simple interface for viewing ..." />
+            <marker date="1468292929000" expanded="true" signature="9288:11510" ph="..." />
+            <marker date="1468292929000" expanded="true" signature="9301:9490" ph=" Constructs a new directory iterator from a path ..." />
+            <marker date="1468292929000" expanded="true" signature="9553:9799" ph=" Determine if current DirectoryIterator item is '.' or '..' ..." />
+            <marker date="1468292929000" expanded="true" signature="9850:10036" ph=" Rewind the DirectoryIterator back to the start ..." />
+            <marker date="1468292929000" expanded="true" signature="10088:10337" ph=" Check whether current DirectoryIterator position is a valid file ..." />
+            <marker date="1468292929000" expanded="true" signature="10388:10627" ph=" Return the key for the current DirectoryIterator item ..." />
+            <marker date="1468292929000" expanded="true" signature="10676:10907" ph=" Return the current DirectoryIterator item. ..." />
+            <marker date="1468292929000" expanded="true" signature="10960:11141" ph=" Move forward to next DirectoryIterator item ..." />
+            <marker date="1468292929000" expanded="true" signature="11191:11463" ph=" Seek to a DirectoryIterator item ..." />
+            <marker date="1468292929000" expanded="true" signature="11516:11608" ph=" The Filesystem iterator ..." />
+            <marker date="1468292929000" expanded="true" signature="11714:14136" ph="..." />
+            <marker date="1468292929000" expanded="true" signature="12132:12349" ph=" Constructs a new filesystem iterator ..." />
+            <marker date="1468292929000" expanded="true" signature="12419:12591" ph=" Rewinds back to the beginning ..." />
+            <marker date="1468292929000" expanded="true" signature="12643:12805" ph=" Move to the next file ..." />
+            <marker date="1468292929000" expanded="true" signature="12855:13135" ph=" Retrieve the key for the current file ..." />
+            <marker date="1468292929000" expanded="true" signature="13184:13462" ph=" The current file ..." />
+            <marker date="1468292929000" expanded="true" signature="13515:13716" ph=" Get the handling flags ..." />
+            <marker date="1468292929000" expanded="true" signature="13770:14081" ph=" Sets handling flags ..." />
+            <marker date="1468292929000" expanded="true" signature="14142:14336" ph=" The &lt;b&gt;RecursiveDirectoryIterator&lt;/b&gt; provides ..." />
+            <marker date="1468292929000" expanded="true" signature="14470:17160" ph="..." />
+            <marker date="1468292929000" expanded="true" signature="14484:14712" ph=" Constructs a RecursiveDirectoryIterator ..." />
+            <marker date="1468292929000" expanded="true" signature="14782:15128" ph=" Returns whether current entry is a directory and not '.' or '..' ..." />
+            <marker date="1468292929000" expanded="true" signature="15204:15480" ph=" Returns an iterator for the current entry if it is a directory ..." />
+            <marker date="1468292929000" expanded="true" signature="15537:15735" ph=" Get sub path ..." />
+            <marker date="1468292929000" expanded="true" signature="15791:16015" ph=" Get sub path and name ..." />
+            <marker date="1468292929000" expanded="true" signature="16075:16247" ph=" Rewinds back to the beginning ..." />
+            <marker date="1468292929000" expanded="true" signature="16299:16461" ph=" Move to the next file ..." />
+            <marker date="1468292929000" expanded="true" signature="16511:16791" ph=" Retrieve the key for the current file ..." />
+            <marker date="1468292929000" expanded="true" signature="16840:17118" ph=" The current file ..." />
+            <marker date="1468292929000" expanded="true" signature="17166:17300" ph=" Iterates through a file system in a similar fashion to  ..." />
+            <marker date="1468292929000" expanded="true" signature="17412:17979" ph="..." />
+            <marker date="1468292929000" expanded="true" signature="17425:17632" ph=" Construct a directory using glob ..." />
+            <marker date="1468292929000" expanded="true" signature="17702:17940" ph=" Get the number of directories and files ..." />
+            <marker date="1468292929000" expanded="true" signature="17985:18120" ph=" The SplFileObject class offers an object oriented interface for a file. ..." />
+            <marker date="1468292929000" expanded="true" signature="18234:32130" ph="..." />
+            <marker date="1468292929000" expanded="true" signature="18369:18667" ph=" Construct a new file object. ..." />
+            <marker date="1468292929000" expanded="true" signature="18775:18946" ph=" Rewind the file to the first line ..." />
+            <marker date="1468292929000" expanded="true" signature="18998:19185" ph=" Reached end of file ..." />
+            <marker date="1468292929000" expanded="true" signature="19234:19422" ph=" Not at EOF ..." />
+            <marker date="1468292929000" expanded="true" signature="19473:19698" ph=" Gets line from file ..." />
+            <marker date="1468292929000" expanded="true" signature="19749:20051" ph=" Read from file ..." />
+            <marker date="1468292929000" expanded="true" signature="20109:21227" ph=" Gets line from file and parse as CSV fields ..." />
+            <marker date="1468292929000" expanded="true" signature="21320:22120" ph=" Write a field array as a CSV line ..." />
+            <marker date="1468292929000" expanded="true" signature="22237:22805" ph=" Set the delimiter and enclosure character for CSV ..." />
+            <marker date="1468292929000" expanded="true" signature="22908:23169" ph=" Get the delimiter and enclosure character for CSV ..." />
+            <marker date="1468292929000" expanded="true" signature="23228:23695" ph=" Portable file locking ..." />
+            <marker date="1468292929000" expanded="true" signature="23777:23974" ph=" Flushes the output to the file ..." />
+            <marker date="1468292929000" expanded="true" signature="24026:24256" ph=" Return current file position ..." />
+            <marker date="1468292929000" expanded="true" signature="24307:25185" ph=" Seek to a position ..." />
+            <marker date="1468292929000" expanded="true" signature="25256:25493" ph=" Gets character from file ..." />
+            <marker date="1468292929000" expanded="true" signature="25544:25813" ph=" Output all remaining data on a file pointer ..." />
+            <marker date="1468292929000" expanded="true" signature="25868:26336" ph=" Gets line from file and strip HTML tags ..." />
+            <marker date="1468292929000" expanded="true" signature="26410:27075" ph=" Parses input from file according to a format ..." />
+            <marker date="1468292929000" expanded="true" signature="27146:27683" ph=" Write to file ..." />
+            <marker date="1468292929000" expanded="true" signature="27755:28048" ph=" Gets information about the file ..." />
+            <marker date="1468292929000" expanded="true" signature="28099:28600" ph=" Truncates the file to a given length ..." />
+            <marker date="1468292929000" expanded="true" signature="28660:28996" ph=" Retrieve current line of file ..." />
+            <marker date="1468292929000" expanded="true" signature="29049:29222" ph=" Get line number ..." />
+            <marker date="1468292929000" expanded="true" signature="29271:29421" ph=" Read next line ..." />
+            <marker date="1468292929000" expanded="true" signature="29471:29810" ph=" Sets flags for the SplFileObject ..." />
+            <marker date="1468292929000" expanded="true" signature="29870:30075" ph=" Gets flags for the SplFileObject ..." />
+            <marker date="1468292929000" expanded="true" signature="30129:30389" ph=" Set maximum line length ..." />
+            <marker date="1468292929000" expanded="true" signature="30456:30726" ph=" Get maximum line length ..." />
+            <marker date="1468292929000" expanded="true" signature="30785:30969" ph=" SplFileObject does not have children ..." />
+            <marker date="1468292929000" expanded="true" signature="31026:31247" ph=" No purpose ..." />
+            <marker date="1468292929000" expanded="true" signature="31304:31564" ph=" Seek to specified line ..." />
+            <marker date="1468292929000" expanded="true" signature="31623:31879" ph=" Alias of &lt;b&gt;SplFileObject::fgets&lt;/b&gt; ..." />
+            <marker date="1468292929000" expanded="true" signature="31939:32085" ph=" Alias of &lt;b&gt;SplFileObject::current&lt;/b&gt; ..." />
+            <marker date="1468292929000" expanded="true" signature="32136:32289" ph=" The SplTempFileObject class offers an object oriented interface for a temporary file. ..." />
+            <marker date="1468292929000" expanded="true" signature="32409:32677" ph="..." />
+            <marker date="1468292929000" expanded="true" signature="32423:32621" ph=" Construct a new temporary file object ..." />
+            <marker date="1468292929000" expanded="true" signature="32683:32841" ph=" The SplDoublyLinkedList class provides the main functionalities of a doubly linked list. ..." />
+            <marker date="1468292929000" expanded="true" signature="32928:40144" ph="..." />
+            <marker date="1468292929000" expanded="true" signature="33072:33384" ph=" Add/insert a new value at the specified index ..." />
+            <marker date="1468292929000" expanded="true" signature="33447:33668" ph=" Pops a node from the end of the doubly linked list ..." />
+            <marker date="1468292929000" expanded="true" signature="33717:33949" ph=" Shifts a node from the beginning of the doubly linked list ..." />
+            <marker date="1468292929000" expanded="true" signature="34000:34277" ph=" Pushes an element at the end of the doubly linked list ..." />
+            <marker date="1468292929000" expanded="true" signature="34333:34609" ph=" Prepends the doubly linked list with an element ..." />
+            <marker date="1468292929000" expanded="true" signature="34668:34893" ph=" Peeks at the node from the end of the doubly linked list ..." />
+            <marker date="1468292929000" expanded="true" signature="34942:35177" ph=" Peeks at the node from the beginning of the doubly linked list ..." />
+            <marker date="1468292929000" expanded="true" signature="35229:35476" ph=" Counts the number of elements in the doubly linked list. ..." />
+            <marker date="1468292929000" expanded="true" signature="35527:35759" ph=" Checks whether the doubly linked list is empty. ..." />
+            <marker date="1468292929000" expanded="true" signature="35812:36234" ph=" Sets the mode of iteration ..." />
+            <marker date="1468292929000" expanded="true" signature="36300:36537" ph=" Returns the mode of iteration ..." />
+            <marker date="1468292929000" expanded="true" signature="36598:36929" ph=" Returns whether the requested $index exists ..." />
+            <marker date="1468292929000" expanded="true" signature="36993:37303" ph=" Returns the value at the specified $index ..." />
+            <marker date="1468292929000" expanded="true" signature="37364:37735" ph=" Sets the value at the specified $index to $newval ..." />
+            <marker date="1468292929000" expanded="true" signature="37805:38079" ph=" Unsets the value at the specified $index ..." />
+            <marker date="1468292929000" expanded="true" signature="38142:38319" ph=" Rewind iterator back to the start ..." />
+            <marker date="1468292929000" expanded="true" signature="38371:38566" ph=" Return current array entry ..." />
+            <marker date="1468292929000" expanded="true" signature="38619:38809" ph=" Return current node index ..." />
+            <marker date="1468292929000" expanded="true" signature="38858:39018" ph=" Move to next entry ..." />
+            <marker date="1468292929000" expanded="true" signature="39068:39232" ph=" Move to previous entry ..." />
+            <marker date="1468292929000" expanded="true" signature="39282:39553" ph=" Check whether the doubly linked list contains more nodes ..." />
+            <marker date="1468292929000" expanded="true" signature="39604:39834" ph=" Unserializes the storage ..." />
+            <marker date="1468292929000" expanded="true" signature="39903:40098" ph=" Serializes the storage ..." />
+            <marker date="1468292929000" expanded="true" signature="40150:40312" ph=" The SplQueue class provides the main functionalities of a queue implemented using a doubly linked list. ..." />
+            <marker date="1468292929000" expanded="true" signature="40416:41415" ph="..." />
+            <marker date="1468292929000" expanded="true" signature="40430:40677" ph=" Adds an element to the queue. ..." />
+            <marker date="1468292929000" expanded="true" signature="40736:40932" ph=" Dequeues a node from the queue ..." />
+            <marker date="1468292929000" expanded="true" signature="40981:41364" ph=" Sets the mode of iteration ..." />
+            <marker date="1468292929000" expanded="true" signature="41420:41582" ph=" The SplStack class provides the main functionalities of a stack implemented using a doubly linked list. ..." />
+            <marker date="1468292929000" expanded="true" signature="41686:42133" ph="..." />
+            <marker date="1468292929000" expanded="true" signature="41695:42083" ph=" Sets the mode of iteration ..." />
+            <marker date="1468292929000" expanded="true" signature="42139:42260" ph=" The SplHeap class provides the main functionalities of an Heap. ..." />
+            <marker date="1468292929000" expanded="true" signature="42331:45951" ph="..." />
+            <marker date="1468292929000" expanded="true" signature="42344:42559" ph=" Extracts a node from top of the heap and sift up. ..." />
+            <marker date="1468292929000" expanded="true" signature="42612:42875" ph=" Inserts an element in the heap by sifting it up. ..." />
+            <marker date="1468292929000" expanded="true" signature="42933:43131" ph=" Peeks at the node from the top of the heap ..." />
+            <marker date="1468292929000" expanded="true" signature="43180:43387" ph=" Counts the number of elements in the heap. ..." />
+            <marker date="1468292929000" expanded="true" signature="43438:43630" ph=" Checks whether the heap is empty. ..." />
+            <marker date="1468292929000" expanded="true" signature="43683:43856" ph=" Rewind iterator back to the start (no-op) ..." />
+            <marker date="1468292929000" expanded="true" signature="43908:44108" ph=" Return current node pointed by the iterator ..." />
+            <marker date="1468292929000" expanded="true" signature="44161:44339" ph=" Return current node index ..." />
+            <marker date="1468292929000" expanded="true" signature="44388:44539" ph=" Move to the next node ..." />
+            <marker date="1468292929000" expanded="true" signature="44589:44820" ph=" Check whether the heap contains more nodes ..." />
+            <marker date="1468292929000" expanded="true" signature="44871:45089" ph=" Recover from the corrupted state and allow further actions on the heap. ..." />
+            <marker date="1468292929000" expanded="true" signature="45156:45883" ph=" Compare elements in order to place them correctly in the heap while sifting up. ..." />
+            <marker date="1468292929000" expanded="true" signature="45957:46115" ph=" The SplMinHeap class provides the main functionalities of a heap, keeping the minimum on the top. ..." />
+            <marker date="1468292929000" expanded="true" signature="46196:49811" ph="..." />
+            <marker date="1468292929000" expanded="true" signature="46209:46938" ph=" Compare elements in order to place them correctly in the heap while sifting up. ..." />
+            <marker date="1468292929000" expanded="true" signature="47010:47225" ph=" Extracts a node from top of the heap and sift up. ..." />
+            <marker date="1468292929000" expanded="true" signature="47278:47541" ph=" Inserts an element in the heap by sifting it up. ..." />
+            <marker date="1468292929000" expanded="true" signature="47599:47797" ph=" Peeks at the node from the top of the heap ..." />
+            <marker date="1468292929000" expanded="true" signature="47846:48053" ph=" Counts the number of elements in the heap. ..." />
+            <marker date="1468292929000" expanded="true" signature="48104:48296" ph=" Checks whether the heap is empty. ..." />
+            <marker date="1468292929000" expanded="true" signature="48349:48522" ph=" Rewind iterator back to the start (no-op) ..." />
+            <marker date="1468292929000" expanded="true" signature="48574:48774" ph=" Return current node pointed by the iterator ..." />
+            <marker date="1468292929000" expanded="true" signature="48827:49005" ph=" Return current node index ..." />
+            <marker date="1468292929000" expanded="true" signature="49054:49205" ph=" Move to the next node ..." />
+            <marker date="1468292929000" expanded="true" signature="49255:49486" ph=" Check whether the heap contains more nodes ..." />
+            <marker date="1468292929000" expanded="true" signature="49537:49755" ph=" Recover from the corrupted state and allow further actions on the heap. ..." />
+            <marker date="1468292929000" expanded="true" signature="49817:49975" ph=" The SplMaxHeap class provides the main functionalities of a heap, keeping the maximum on the top. ..." />
+            <marker date="1468292929000" expanded="true" signature="50056:50804" ph="..." />
+            <marker date="1468292929000" expanded="true" signature="50065:50747" ph=" Compare elements in order to place them correctly in the heap while sifting up. ..." />
+            <marker date="1468292929000" expanded="true" signature="50809:50991" ph=" The SplPriorityQueue class provides the main functionalities of an  ..." />
+            <marker date="1468292929000" expanded="true" signature="51062:55632" ph="..." />
+            <marker date="1468292929000" expanded="true" signature="51167:51883" ph=" Compare priorities in order to place elements correctly in the heap while sifting up. ..." />
+            <marker date="1468292929000" expanded="true" signature="51958:52321" ph=" Inserts an element in the queue by sifting it up. ..." />
+            <marker date="1468292929000" expanded="true" signature="52390:52828" ph=" Sets the mode of extraction ..." />
+            <marker date="1468292929000" expanded="true" signature="52895:53149" ph=" Peeks at the node from the top of the queue ..." />
+            <marker date="1468292929000" expanded="true" signature="53198:53475" ph=" Extracts a node from top of the heap and sift up. ..." />
+            <marker date="1468292929000" expanded="true" signature="53528:53746" ph=" Counts the number of elements in the queue. ..." />
+            <marker date="1468292929000" expanded="true" signature="53797:54000" ph=" Checks whether the queue is empty. ..." />
+            <marker date="1468292929000" expanded="true" signature="54053:54235" ph=" Rewind iterator back to the start (no-op) ..." />
+            <marker date="1468292929000" expanded="true" signature="54287:54556" ph=" Return current node pointed by the iterator ..." />
+            <marker date="1468292929000" expanded="true" signature="54609:54796" ph=" Return current node index ..." />
+            <marker date="1468292929000" expanded="true" signature="54845:55005" ph=" Move to the next node ..." />
+            <marker date="1468292929000" expanded="true" signature="55055:55297" ph=" Check whether the queue contains more nodes ..." />
+            <marker date="1468292929000" expanded="true" signature="55348:55576" ph=" Recover from the corrupted state and allow further actions on the queue. ..." />
+            <marker date="1468292929000" expanded="true" signature="55638:56014" ph=" The SplFixedArray class provides the main functionalities of array. The  ..." />
+            <marker date="1468292929000" expanded="true" signature="56095:60682" ph="..." />
+            <marker date="1468292929000" expanded="true" signature="56108:56291" ph=" Constructs a new fixed array ..." />
+            <marker date="1468292929000" expanded="true" signature="56357:56544" ph=" Returns the size of the array ..." />
+            <marker date="1468292929000" expanded="true" signature="56595:56815" ph=" Returns a PHP array from the fixed array ..." />
+            <marker date="1468292929000" expanded="true" signature="56868:57349" ph=" Import a PHP array in a &lt;b&gt;SplFixedArray&lt;/b&gt; instance ..." />
+            <marker date="1468292929000" expanded="true" signature="57438:57639" ph=" Gets the size of the array ..." />
+            <marker date="1468292929000" expanded="true" signature="57692:57936" ph=" Change the size of an array ..." />
+            <marker date="1468292929000" expanded="true" signature="57994:58316" ph=" Returns whether the requested index exists ..." />
+            <marker date="1468292929000" expanded="true" signature="58380:58681" ph=" Returns the value at the specified index ..." />
+            <marker date="1468292929000" expanded="true" signature="58742:59093" ph=" Sets a new value at a specified index ..." />
+            <marker date="1468292929000" expanded="true" signature="59163:59429" ph=" Unsets the value at the specified $index ..." />
+            <marker date="1468292929000" expanded="true" signature="59492:59663" ph=" Rewind iterator back to the start ..." />
+            <marker date="1468292929000" expanded="true" signature="59715:59907" ph=" Return current array entry ..." />
+            <marker date="1468292929000" expanded="true" signature="59960:60144" ph=" Return current array index ..." />
+            <marker date="1468292929000" expanded="true" signature="60193:60347" ph=" Move to next entry ..." />
+            <marker date="1468292929000" expanded="true" signature="60397:60642" ph=" Check whether the array contains more elements ..." />
+            <marker date="1468292929000" expanded="true" signature="60688:60863" ph=" The &lt;b&gt;SplObserver&lt;/b&gt; interface is used alongside ..." />
+            <marker date="1468292929000" expanded="true" signature="60890:61245" ph="..." />
+            <marker date="1468292929000" expanded="true" signature="60903:61187" ph=" Receive update from subject ..." />
+            <marker date="1468292929000" expanded="true" signature="61251:61425" ph=" The &lt;b&gt;SplSubject&lt;/b&gt; interface is used alongside ..." />
+            <marker date="1468292929000" expanded="true" signature="61451:62303" ph="..." />
+            <marker date="1468292929000" expanded="true" signature="61464:61718" ph=" Attach an SplObserver ..." />
+            <marker date="1468292929000" expanded="true" signature="61789:62040" ph=" Detach an observer ..." />
+            <marker date="1468292929000" expanded="true" signature="62111:62264" ph=" Notify an observer ..." />
+            <marker date="1468292929000" expanded="true" signature="62309:62576" ph=" The SplObjectStorage class provides a map from objects to data or, by ..." />
+            <marker date="1468292929000" expanded="true" signature="62674:69814" ph="..." />
+            <marker date="1468292929000" expanded="true" signature="62687:63051" ph=" Adds an object in the storage ..." />
+            <marker date="1468292929000" expanded="true" signature="63124:63378" ph=" Removes an object from the storage ..." />
+            <marker date="1468292929000" expanded="true" signature="63437:63763" ph=" Checks if the storage contains a specific object ..." />
+            <marker date="1468292929000" expanded="true" signature="63824:64109" ph=" Adds all objects from another storage ..." />
+            <marker date="1468292929000" expanded="true" signature="64162:64497" ph=" Removes objects contained in another storage from the current storage ..." />
+            <marker date="1468292929000" expanded="true" signature="64553:64881" ph=" Removes all objects except for those contained in another storage from the current storage ..." />
+            <marker date="1468292929000" expanded="true" signature="64936:65193" ph=" Returns the data associated with the current iterator entry ..." />
+            <marker date="1468292929000" expanded="true" signature="65246:65560" ph=" Sets the data associated with the current iterator entry ..." />
+            <marker date="1468292929000" expanded="true" signature="65618:65838" ph=" Returns the number of objects in the storage ..." />
+            <marker date="1468292929000" expanded="true" signature="65889:66078" ph=" Rewind the iterator to the first storage element ..." />
+            <marker date="1468292929000" expanded="true" signature="66130:66362" ph=" Returns if the current iterator entry is valid ..." />
+            <marker date="1468292929000" expanded="true" signature="66413:66658" ph=" Returns the index at which the iterator currently is ..." />
+            <marker date="1468292929000" expanded="true" signature="66707:66928" ph=" Returns the current storage entry ..." />
+            <marker date="1468292929000" expanded="true" signature="66981:67142" ph=" Move to the next entry ..." />
+            <marker date="1468292929000" expanded="true" signature="67192:67503" ph=" Unserializes a storage from its string representation ..." />
+            <marker date="1468292929000" expanded="true" signature="67571:67773" ph=" Serializes the storage ..." />
+            <marker date="1468292929000" expanded="true" signature="67828:68175" ph=" Checks whether an object exists in the storage ..." />
+            <marker date="1468292929000" expanded="true" signature="68240:68630" ph=" Associates data to an object in the storage ..." />
+            <marker date="1468292929000" expanded="true" signature="68699:68965" ph=" Removes an object from the storage ..." />
+            <marker date="1468292929000" expanded="true" signature="69029:69379" ph=" Returns the data associated with an &lt;type&gt;object&lt;/type&gt; ..." />
+            <marker date="1468292929000" expanded="true" signature="69441:69766" ph=" Calculate a unique identifier for the contained objects ..." />
+            <marker date="1468292929000" expanded="true" signature="69820:69953" ph=" An Iterator that sequentially iterates over all attached iterators ..." />
+            <marker date="1468292929000" expanded="true" signature="70013:74074" ph="..." />
+            <marker date="1468292929000" expanded="true" signature="70161:70429" ph=" Constructs a new MultipleIterator ..." />
+            <marker date="1468292929000" expanded="true" signature="70492:70702" ph=" Gets the flag information ..." />
+            <marker date="1468292929000" expanded="true" signature="70756:71023" ph=" Sets flags ..." />
+            <marker date="1468292929000" expanded="true" signature="71083:71540" ph=" Attaches iterator information ..." />
+            <marker date="1468292929000" expanded="true" signature="71626:71887" ph=" Detaches an iterator ..." />
+            <marker date="1468292929000" expanded="true" signature="71958:72262" ph=" Checks if an iterator is attached ..." />
+            <marker date="1468292929000" expanded="true" signature="72335:72588" ph=" Gets the number of attached iterator instances ..." />
+            <marker date="1468292929000" expanded="true" signature="72648:72828" ph=" Rewinds all attached iterator instances ..." />
+            <marker date="1468292929000" expanded="true" signature="72880:73145" ph=" Checks the validity of sub iterators ..." />
+            <marker date="1468292929000" expanded="true" signature="73196:73471" ph=" Gets the registered iterator instances ..." />
+            <marker date="1468292929000" expanded="true" signature="73520:73798" ph=" Gets the registered iterator instances ..." />
+            <marker date="1468292929000" expanded="true" signature="73851:74035" ph=" Moves all attached iterator instances forward ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Adapter/FTPAdapter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <marker date="1476212059455" expanded="true" signature="43:132" ph="..." />
+            <marker date="1476212059455" expanded="true" signature="206:1851" ph="{...}" />
+            <marker date="1476212059455" expanded="true" signature="344:511" ph="{...}" />
+            <marker date="1476212059455" expanded="true" signature="552:699" ph="{...}" />
+            <marker date="1476212059455" expanded="true" signature="740:785" ph="{...}" />
+            <marker date="1476212059455" expanded="true" signature="834:888" ph="{...}" />
+            <marker date="1476212059455" expanded="true" signature="957:1026" ph="{...}" />
+            <marker date="1476212059455" expanded="true" signature="1070:1138" ph="{...}" />
+            <marker date="1476212059455" expanded="true" signature="1188:1259" ph="{...}" />
+            <marker date="1476212059455" expanded="true" signature="1312:1383" ph="{...}" />
+            <marker date="1476212059455" expanded="true" signature="1418:1489" ph="{...}" />
+            <marker date="1476212059455" expanded="true" signature="1529:1575" ph="{...}" />
+            <marker date="1476212059455" expanded="true" signature="1629:1733" ph="{...}" />
+            <marker date="1476212059455" expanded="true" signature="1782:1849" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/FileExtension/ZipFile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <marker date="1476208844371" expanded="true" signature="49:95" ph="..." />
+            <marker date="1476208844371" expanded="true" signature="123:281" ph="{...}" />
+            <marker date="1476208844371" expanded="true" signature="178:279" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/ActionableFileInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+          <folding>
+            <marker date="1476211339017" expanded="true" signature="64:479" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/ActionableInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <marker date="1476211570696" expanded="true" signature="122:126" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/IndexInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <marker date="1476217196778" expanded="true" signature="55:234" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Paginator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <marker date="1476210578194" expanded="true" signature="46:347" ph="{...}" />
+            <marker date="1476210578194" expanded="true" signature="102:345" ph="{...}" />
+            <marker date="1476210578194" expanded="true" signature="247:317" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Hash.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <marker date="1476208702205" expanded="true" signature="41:138" ph="{...}" />
+            <marker date="1476208702205" expanded="true" signature="86:136" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <marker date="1476211316424" expanded="true" signature="56:252" ph="{...}" />
+            <marker date="1476211316424" expanded="true" signature="109:232" ph="..." />
+            <marker date="1476211316424" expanded="true" signature="181:226" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/FileManagerInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <marker date="1476208702205" expanded="true" signature="89:336" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Indexer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <marker date="1476216494747" expanded="true" signature="73:2291" ph="{...}" />
+            <marker date="1476216494747" expanded="true" signature="133:2291" ph="{...}" />
+            <marker date="1476216494747" expanded="true" signature="295:460" ph="{...}" />
+            <marker date="1476216494747" expanded="true" signature="495:807" ph="{...}" />
+            <marker date="1476216494747" expanded="true" signature="693:799" ph="..." />
+            <marker date="1476216494747" expanded="true" signature="705:777" ph="..." />
+            <marker date="1476216494747" expanded="true" signature="847:1104" ph="{...}" />
+            <marker date="1476216494747" expanded="true" signature="1164:1247" ph="{...}" />
+            <marker date="1476216494747" expanded="true" signature="1291:1390" ph="{...}" />
+            <marker date="1476216494747" expanded="true" signature="1431:1528" ph="{...}" />
+            <marker date="1476216494747" expanded="true" signature="1602:2100" ph="{...}" />
+            <marker date="1476216494747" expanded="true" signature="1684:2069" ph="..." />
+            <marker date="1476216494747" expanded="true" signature="1728:2059" ph="..." />
+            <marker date="1476216494747" expanded="true" signature="1966:2045" ph="..." />
+            <marker date="1476216494747" expanded="true" signature="2149:2289" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old/DirController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+          <folding>
+            <marker date="1476221211400" expanded="true" signature="59:1136" ph="{...}" />
+            <marker date="1476221211400" expanded="true" signature="221:303" ph="{...}" />
+            <marker date="1476221211400" expanded="true" signature="333:382" ph="{...}" />
+            <marker date="1476221211400" expanded="true" signature="425:524" ph="{...}" />
+            <marker date="1476221211400" expanded="true" signature="566:687" ph="{...}" />
+            <marker date="1476221211400" expanded="true" signature="734:837" ph="{...}" />
+            <marker date="1476221211400" expanded="true" signature="880:983" ph="{...}" />
+            <marker date="1476221211400" expanded="true" signature="1029:1130" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old/FileCommandCollection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding>
+            <marker date="1476221211384" expanded="true" signature="90:1473" ph="{...}" />
+            <marker date="1476221211384" expanded="true" signature="205:252" ph="{...}" />
+            <marker date="1476221211384" expanded="true" signature="328:366" ph="{...}" />
+            <marker date="1476221211384" expanded="true" signature="406:514" ph="{...}" />
+            <marker date="1476221211384" expanded="true" signature="558:685" ph="{...}" />
+            <marker date="1476221211384" expanded="true" signature="724:825" ph="{...}" />
+            <marker date="1476221211384" expanded="true" signature="866:967" ph="{...}" />
+            <marker date="1476221211384" expanded="true" signature="1025:1154" ph="{...}" />
+            <marker date="1476221211384" expanded="true" signature="1236:1469" ph="{...}" />
+            <marker date="1476221211384" expanded="true" signature="1287:1380" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <marker date="1476383211441" expanded="true" signature="0:381" ph="{&quot;name&quot;: &quot;thijzer/filemanager&quot;...}" />
+            <marker date="1476383211441" expanded="true" signature="52:159" ph="[...]" />
+            <marker date="1476383211441" expanded="true" signature="62:153" ph="{&quot;name&quot;: &quot;Thijs De Paepe&quot;...}" />
+            <marker date="1476383211441" expanded="true" signature="196:317" ph="{...}" />
+            <marker date="1476383211441" expanded="true" signature="215:311" ph="{&quot;FileManager\&quot;: &quot;src/FileManager/&quot;...}" />
+            <marker date="1476383211441" expanded="true" signature="338:379" ph="{&quot;phpunit/phpunit&quot;: &quot;^5.6&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <marker date="1476383478255" expanded="true" signature="102:500" ph="..." />
+            <marker date="1476383478255" expanded="true" signature="284:345" ph="..." />
+            <marker date="1476383478255" expanded="true" signature="363:489" ph="..." />
+            <marker date="1476383478255" expanded="true" signature="402:471" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Commands/DirAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <marker date="1476218049983" expanded="true" signature="55:290" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/FilePath.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <marker date="1476385110807" expanded="true" signature="45:606" ph="{...}" />
+            <marker date="1476385110807" expanded="true" signature="113:154" ph="{...}" />
+            <marker date="1476385110807" expanded="true" signature="198:242" ph="{...}" />
+            <marker date="1476385110807" expanded="true" signature="278:318" ph="{...}" />
+            <marker date="1476385110807" expanded="true" signature="349:405" ph="{...}" />
+            <marker date="1476385110807" expanded="true" signature="458:530" ph="{...}" />
+            <marker date="1476385110807" expanded="true" signature="564:604" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/File.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding>
+            <marker date="1476384863064" expanded="true" signature="123:716" ph="{...}" />
+            <marker date="1476384863064" expanded="true" signature="237:333" ph="{...}" />
+            <marker date="1476384863064" expanded="true" signature="337:468" ph="..." />
+            <marker date="1476384863064" expanded="true" signature="504:547" ph="{...}" />
+            <marker date="1476384863064" expanded="true" signature="548:716" ph="{...}" />
+            <marker date="1476384863064" expanded="true" signature="596:643" ph="{...}" />
+            <marker date="1476384863064" expanded="true" signature="674:714" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Adapter/FileAdapter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <marker date="1476213528172" expanded="true" signature="60:228" ph="{...}" />
+            <marker date="1476213528172" expanded="true" signature="147:226" ph="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Adapter/LFSFileAdapter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <marker date="1476210578190" expanded="true" signature="103:2344" ph="{...}" />
+            <marker date="1476210578190" expanded="true" signature="113:185" ph=" Get File Content ..." />
+            <marker date="1476210578190" expanded="true" signature="214:313" ph="{...}" />
+            <marker date="1476210578190" expanded="true" signature="313:2344" ph="{...}" />
+            <marker date="1476210578190" expanded="true" signature="374:456" ph="{...}" />
+            <marker date="1476210578190" expanded="true" signature="493:827" ph="{...}" />
+            <marker date="1476210578190" expanded="true" signature="559:708" ph="..." />
+            <marker date="1476210578190" expanded="true" signature="733:820" ph="..." />
+            <marker date="1476210578190" expanded="true" signature="863:935" ph="{...}" />
+            <marker date="1476210578190" expanded="true" signature="970:1276" ph="{...}" />
+            <marker date="1476210578190" expanded="true" signature="1008:1108" ph="..." />
+            <marker date="1476210578190" expanded="true" signature="1285:1361" ph=" Returns the byte size of the file ..." />
+            <marker date="1476210578190" expanded="true" signature="1400:1655" ph="{...}" />
+            <marker date="1476210578190" expanded="true" signature="1438:1538" ph="..." />
+            <marker date="1476210578190" expanded="true" signature="1664:1845" ph=" Returns the Formatted File size of the File ..." />
+            <marker date="1476210578190" expanded="true" signature="1894:2252" ph="{...}" />
+            <marker date="1476210578190" expanded="true" signature="2284:2342" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Adapter/AbstractAdapter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding>
+            <marker date="1476208844735" expanded="true" signature="69:1044" ph="{...}" />
+            <marker date="1476208844735" expanded="true" signature="117:213" ph="{...}" />
+            <marker date="1476208844735" expanded="true" signature="159:206" ph="..." />
+            <marker date="1476208844735" expanded="true" signature="262:401" ph="{...}" />
+            <marker date="1476208844735" expanded="true" signature="445:538" ph="{...}" />
+            <marker date="1476208844735" expanded="true" signature="487:531" ph="..." />
+            <marker date="1476208844735" expanded="true" signature="587:1042" ph="{...}" />
+            <marker date="1476208844735" expanded="true" signature="646:690" ph="..." />
+            <marker date="1476208844735" expanded="true" signature="745:792" ph="..." />
+            <marker date="1476208844735" expanded="true" signature="859:916" ph="..." />
+            <marker date="1476208844735" expanded="true" signature="981:1035" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Commands/FileAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <marker date="1476384401627" expanded="true" signature="56:290" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Commands/CommandRecorder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <marker date="1476467377926" expanded="true" signature="61:371" ph="{...}" />
+            <marker date="1476467377926" expanded="true" signature="171:221" ph="{...}" />
+            <marker date="1476467377926" expanded="true" signature="264:369" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/FileManager/test_dir/test_file.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <marker date="1476383478967" expanded="true" signature="21:25" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/FileManager/FileManagerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+          <folding>
+            <marker date="1476466746161" expanded="true" signature="41:87" ph="..." />
+            <marker date="1476466746161" expanded="true" signature="146:945" ph="{...}" />
+            <marker date="1476466746161" expanded="true" signature="231:312" ph="{...}" />
+            <marker date="1476466746161" expanded="true" signature="397:943" ph="{...}" />
+            <marker date="1476466746161" expanded="true" signature="663:937" ph="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/FileManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="50" column="42" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+          <folding>
+            <marker date="1476470409775" expanded="true" signature="35:183" ph="..." />
+            <marker date="1476470409775" expanded="true" signature="202:2753" ph="{...}" />
+            <marker date="1476470409775" expanded="true" signature="311:467" ph="{...}" />
+            <marker date="1476470409775" expanded="true" signature="527:735" ph="{...}" />
+            <marker date="1476470409775" expanded="true" signature="567:653" ph="..." />
+            <marker date="1476470409775" expanded="true" signature="791:969" ph="{...}" />
+            <marker date="1476470409775" expanded="true" signature="834:864" ph="..." />
+            <marker date="1476470409775" expanded="true" signature="1013:1105" ph="{...}" />
+            <marker date="1476470409775" expanded="true" signature="1054:1098" ph="..." />
+            <marker date="1476470409775" expanded="true" signature="1146:1223" ph="{...}" />
+            <marker date="1476470409775" expanded="true" signature="1267:1344" ph="{...}" />
+            <marker date="1476470409775" expanded="true" signature="1387:1468" ph="{...}" />
+            <marker date="1476470409775" expanded="true" signature="1515:1619" ph="{...}" />
+            <marker date="1476470409775" expanded="true" signature="1561:1612" ph="..." />
+            <marker date="1476470409775" expanded="true" signature="1666:1793" ph="{...}" />
+            <marker date="1476470409775" expanded="true" signature="1850:1932" ph="{...}" />
+            <marker date="1476470409775" expanded="true" signature="1962:2011" ph="{...}" />
+            <marker date="1476470409775" expanded="true" signature="2056:2178" ph="{...}" />
+            <marker date="1476470409775" expanded="true" signature="2225:2329" ph="{...}" />
+            <marker date="1476470409775" expanded="true" signature="2372:2476" ph="{...}" />
+            <marker date="1476470409775" expanded="true" signature="2526:2628" ph="{...}" />
+            <marker date="1476470409775" expanded="true" signature="2659:2751" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Adapter/LFSAdapter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+          <folding>
+            <marker date="1476470214672" expanded="true" signature="43:177" ph="..." />
+            <marker date="1476470214672" expanded="true" signature="155:177" ph="..." />
+            <marker date="1476470214672" expanded="true" signature="195:3510" ph="{...}" />
+            <marker date="1476470214672" expanded="true" signature="198:414" ph="//..." />
+            <marker date="1476470214672" expanded="true" signature="455:741" ph="{...}" />
+            <marker date="1476470214672" expanded="true" signature="475:624" ph="..." />
+            <marker date="1476470214672" expanded="true" signature="649:734" ph="..." />
+            <marker date="1476470214672" expanded="true" signature="743:3147" ph="//..." />
+            <marker date="1476470214672" expanded="true" signature="3209:3508" ph="{...}" />
+            <marker date="1476470214672" expanded="true" signature="3287:3501" ph="..." />
+            <marker date="1476470214672" expanded="true" signature="3313:3492" ph="{...}" />
+            <marker date="1476470214672" expanded="true" signature="3394:3478" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Commands/Command.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <marker date="1476470214700" expanded="true" signature="57:162" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Commands/FileCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="36" />
+          <folding>
+            <marker date="1476470214692" expanded="true" signature="99:1430" ph="{...}" />
+            <marker date="1476470214692" expanded="true" signature="247:362" ph="{...}" />
+            <marker date="1476470214692" expanded="true" signature="393:433" ph="{...}" />
+            <marker date="1476470214692" expanded="true" signature="470:516" ph="{...}" />
+            <marker date="1476470214692" expanded="true" signature="549:591" ph="{...}" />
+            <marker date="1476470214692" expanded="true" signature="637:701" ph="{...}" />
+            <marker date="1476470214692" expanded="true" signature="756:829" ph="{...}" />
+            <marker date="1476470214692" expanded="true" signature="884:957" ph="{...}" />
+            <marker date="1476470214692" expanded="true" signature="1007:1075" ph="{...}" />
+            <marker date="1476470214692" expanded="true" signature="1132:1207" ph="{...}" />
+            <marker date="1476470214692" expanded="true" signature="1253:1317" ph="{...}" />
+            <marker date="1476470214692" expanded="true" signature="1363:1428" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager/Commands/DirCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <marker date="1476470518445" expanded="true" signature="362:1407" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

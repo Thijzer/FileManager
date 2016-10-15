@@ -1,0 +1,19 @@
+{
+    "name": "thijzer/filemanager",
+    "authors": [
+        {
+            "name": "Thijs De Paepe",
+            "email": "thijs.dp@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "FileManager\\": "src/FileManager/",
+            "Tests\\": "src/Tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.6"
+    }
+}
