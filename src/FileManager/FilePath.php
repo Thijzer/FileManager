@@ -11,27 +11,27 @@ class FilePath
         $this->path = $path;
     }
 
-    public static function fromPath($path)
-    {
-        return new self($path);
-    } 
-
-    public function getFullPath()
+    public function getPath() : string
     {
         return $this->path;
     }
 
-    public function getHash()
+    public function getHash() : string
     {
-        return Hash::fromPath($this->path);
+        return HashGenerator::generate($this->path);
     }
 
-    public function isIdentical(FilePath $filePath)
+    public function isEqual(FilePath $filePath) : bool
     {
-        return ($this->getHash() === $filePath->getHash());
+        return ($this->getPath() === $filePath->getPath());
     }
 
-    public function __toString()
+    public static function createFromPath($path)
+    {
+        return new self($path);
+    }
+
+    public function __toString() : string
     {
         return $this->path;
     }

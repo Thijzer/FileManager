@@ -11,7 +11,7 @@ class File extends \SplFileInfo implements FileAdapter
 
     public function __construct(string $path, string $content = null)
     {
-        $this->path = FilePath::fromPath($path);
+        $this->path = FilePath::createFromPath($path);
         $this->content = $content;
     }
 
