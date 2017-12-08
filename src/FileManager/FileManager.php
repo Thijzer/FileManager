@@ -6,22 +6,28 @@ use FileManager\Adapter\LFSAdapter;
 use FileManager\Commands\DirCommand;
 use FileManager\Commands\FileCommand;
 use FileManager\Commands\CommandRecorder;
+use FileManager\Adapter\AbstractAdapter;
 
 class FileManager
 {
     private $recorder;
     private $rootDirectory;
+    private $adapter;
 
-    public function __construct(string $rootDirectory)
-    {
-        $this->rootDirectory = rtrim($rootDirectory, DIRECTORY_SEPARATOR).DIRECTORY_SEPARATOR;
-        $this->recorder = new CommandRecorder();
+    public function __construct(
+        string $rootDirectory,
+        CommandRecorder $recorder = null,
+        AbstractAdapter $adapter = null
+    ) {
+        $this->rootDirectory = rtrim($rootDirectory, DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR;
+        $this->recorder = $recorder ?? new CommandRecorder();
+        $this->adapter = $adapter ?? new LFSAdapter();
     }
 
     public function copyFile(File $file, $filename = null)
     {
         if (null === $filename) {
-            $filename = $file->getFilename().'-copy.'.$file->getExtension();
+            $filename = $file->getFilename() . '-copy.' . $file->getExtension();
         }
 
         $this->recorder->record(FileCommand::copyFile($file, $filename));
@@ -38,7 +44,7 @@ class FileManager
 
     public function addFiles(array $files)
     {
-        foreach($files as $file) {
+        foreach ($files as $file) {
             $this->addFile($file);
         }
     }
@@ -68,7 +74,7 @@ class FileManager
     public function findFile(array $fileList)
     {
         $this->recorder->record(DirCommand::findFiles($this->rootDirectory, $fileList));
-        $this->persist();
+        //$this->persist();
     }
 
     private function relativeDir(string $directoryName)
@@ -83,7 +89,9 @@ class FileManager
 
     public function renameDir($dirA, $dirB)
     {
-        $this->recorder->record(DirCommand::renameDir($this->relativeDir($dirA), $this->relativeDir($dirB)));
+        $this->recorder->record(
+            DirCommand::renameDir($this->relativeDir($dirA), $this->relativeDir($dirB))
+        );
     }
 
     public function deleteDir($directoryName)
@@ -103,7 +111,7 @@ class FileManager
 
     public function persist()
     {
-        $adapter = new LFSAdapter();
+        $adapter = $this->adapter;
         $adapter->handle($this->recorder);
     }
 }
