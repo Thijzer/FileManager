@@ -2,13 +2,13 @@
 
 namespace FileManager\Adapter;
 
-use FileManager\Client\FtpClient;
+use FileManager\Client\FtpClientFactory;
 use FileManager\File;
 use FileManager\FileManagerInterface;
 
 class FTPAdapter extends AbstractAdapter implements FileManagerInterface
 {
-    /** @var FtpClient */
+    /** @var FtpClientFactory */
     private $ftpClient;
     private $directory;
 
@@ -22,7 +22,7 @@ class FTPAdapter extends AbstractAdapter implements FileManagerInterface
     private function connect($settings)
     {
         $settings;
-        $this->ftpClient = new FtpClient();
+        $this->ftpClient = new FtpClientFactory();
         $this->ftpClient->connect();
         $this->ftpClient->login();
     }

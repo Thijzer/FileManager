@@ -4,32 +4,41 @@ namespace FileManager\Client;
 
 class FtpConnection
 {
-    private $host;
-    private $username;
-    private $password;
+    private $resource;
+    private $transferMode;
 
-    public function __construct(
-        string $host,
-        string $username = 'anonymous',
-        string $password = ''
-    ) {
-        $this->host = $host;
-        $this->password = $password;
-        $this->username = $username;
+    public function __construct($resource, int $transferMode)
+    {
+        $this->setTransferMode($transferMode);
+        $this->resource = $resource;
     }
 
-    public function getHost(): string
+    public function getConnection()
     {
-        return $this->host;
+        return $this->resource;
     }
 
-    public function getPassword(): string
+    public function closeConnection()
     {
-        return $this->password;
+        @ftp_close($this->resource);
+        $this->resource = null;
     }
 
-    public function getUsername(): string
+    public function setTransferMode(int $transferMode)
     {
-        return $this->username;
+        if (!\in_array($transferMode, [FTP_BINARY, FTP_ASCII], true)) {
+            return;
+        }
+        $this->transferMode = $transferMode;
+    }
+
+    public function getTransferMode()
+    {
+        return $this->transferMode;
+    }
+
+    public function __destruct()
+    {
+        $this->closeConnection();
     }
 }
