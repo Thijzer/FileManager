@@ -4,15 +4,22 @@ namespace Tests\FileManager;
 
 use FileManager\File;
 use FileManager\FileManager;
+use FileManager\Commands\CommandRecorder;
 
 class FileManagerTest extends \PHPUnit_Framework_TestCase
 {
     /** @var FileManager */
     private $fileManager;
+    /** @var CommandRecorder */
+    private $recorder;
 
     public function setUp()
     {
-        $this->fileManager = new FileManager(__DIR__ . '/test_dir');
+        $this->recorder = new CommandRecorder();
+        $this->fileManager = new FileManager(
+            __DIR__ . '/test_dir',
+            $this->recorder
+        );
     }
 
     /** @test */
@@ -21,17 +28,26 @@ class FileManagerTest extends \PHPUnit_Framework_TestCase
         $filePath = __DIR__ . '/test_dir/test_file.php';
         $file = new File($filePath, file_get_contents($filePath));
 
+        // $this->fileManager->addFile($file);
+        // $this->fileManager->listDir();
+
+        // $a = $this->recorder->getRecordedCommands();
+        // \var_dump(
+        //     count($a),
+        //     count($this->recorder->getRecordedCommands())
+        // );
+
+        // array_map(function ($record) {
+        //     \var_dump(
+        //         $record->getAction(),
+        //         $record->getAsset() instanceof File,
+        //         $record->getResolution()
+        //     );
+        // }, $a);
+
         $this->fileManager->addFile($file);
         $this->fileManager->listDir();
 
-        var_dump($this->fileManager->persist());
-
-//        $spoonRecipe = new SpoonRecipe();
-//        $newFile = $spoonRecipe->start($file, $this->converter);
-//
-//        $this->assertEquals(
-//            $newFile->getContent(),
-//            file_get_contents(__DIR__.'/twig_file/test_file.html.twig.test')
-//        );
+        $this->fileManager->persist();
     }
 }

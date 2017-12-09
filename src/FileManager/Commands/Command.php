@@ -4,7 +4,9 @@ namespace FileManager\Commands;
 
 interface Command
 {
-    public function getFile();
+    public function getAsset();
+
     public function getResolution();
+
     public function getAction();
 }

@@ -15,7 +15,7 @@ class DirCommand implements Command
         $this->resolution = $resolution;
     }
 
-    public function getDir()
+    public function getAsset()
     {
         return $this->directory;
     }

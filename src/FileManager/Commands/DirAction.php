@@ -10,5 +10,5 @@ class DirAction
     const CREATE_DIR = 'create_dir';
     const READ_DIR = 'read_dir';
     const IS_DIR = 'is_dir';
-    const FIND = 'find';
+	const FIND = 'find';
 }

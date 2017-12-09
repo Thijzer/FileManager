@@ -13,8 +13,8 @@ abstract class AbstractAdapter
 
     public function copy(File $file, $location)
     {
-        $filename = $file->getRealName().'-copy'.$file->getExtension();
-        $this->addFile(new File($location.$filename));
+        $filename = $file->getRealName() . '-copy' . $file->getExtension();
+        $this->addFile(new File($location . $filename));
     }
 
     public function addFiles(array $files)
@@ -24,7 +24,7 @@ abstract class AbstractAdapter
         }
     }
 
-    protected function hardSync(Indexer $index)
+    protected function sync(Indexer $index)
     {
         foreach ($index->getAddedFiles() as $file) {
             $this->addFile($file);

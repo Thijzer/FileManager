@@ -17,7 +17,7 @@ class FileCommand implements Command
         $this->resolution = $resolution;
     }
 
-    public function getFile()
+    public function getAsset()
     {
         return $this->file;
     }
@@ -61,7 +61,7 @@ class FileCommand implements Command
     {
         return new self(FileAction::UPDATE, $path);
     }
-    
+
     public static function isFile($path)
     {
         return new self(FileAction::IS_FILE, $path);

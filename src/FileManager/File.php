@@ -15,11 +15,6 @@ class File extends \SplFileInfo implements FileAdapter
         $this->content = $content;
     }
 
-/*    public static function create(string $path, FileAdapter $fileAdapter)
-    {
-        return new self($path, $fileAdapter);
-    }*/
-
     public function getContent()
     {
         return $this->content;
@@ -32,6 +27,6 @@ class File extends \SplFileInfo implements FileAdapter
 
     public function getPath()
     {
-        return $this->path;
+        return $this->path->getPath();
     }
 }

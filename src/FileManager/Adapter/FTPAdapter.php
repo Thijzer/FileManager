@@ -14,7 +14,7 @@ class FTPAdapter extends AbstractAdapter implements FileManagerInterface
 
     public function __construct($directory, array $settings)
     {
-        $directory = rtrim($directory, DIRECTORY_SEPARATOR).DIRECTORY_SEPARATOR;
+        $directory = rtrim($directory, DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR;
         $this->directory = $directory;
         $this->connect($settings);
     }
@@ -36,10 +36,10 @@ class FTPAdapter extends AbstractAdapter implements FileManagerInterface
     {
         // TODO: Implement move() method.
     }
-    
+
     public function persist(FileManagerInterface $index = null)
     {
-        $this->hardSync($index);
+        $this->sync($index);
         $this->close();
     }
 
@@ -70,7 +70,7 @@ class FTPAdapter extends AbstractAdapter implements FileManagerInterface
 
     public function rename(File $file, $newFilename)
     {
-        $this->ftpClient->rename($file->getFilename(), $newFilename.$file->getExtension());
+        $this->ftpClient->rename($file->getFilename(), $newFilename . $file->getExtension());
     }
 
     public function isDirectory($directoryName)

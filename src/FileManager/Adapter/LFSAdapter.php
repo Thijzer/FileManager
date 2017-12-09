@@ -5,7 +5,7 @@ namespace FileManager\Adapter;
 use FileManager\Commands\CommandRecorder;
 use FileManager\Commands\FileAction;
 use FileManager\File;
-use FileManager\FileManagerInterface;
+use FileManager\Commands\DirAction;
 
 class LFSAdapter
 {
@@ -20,12 +20,14 @@ class LFSAdapter
 
     public function addFile(File $file)
     {
+        $path = $file->getPath();
+        \var_dump($path);
         try {
-            $localFile = fopen($this->fullPath, 'w+');
-            fwrite($localFile, $this->getContent());
+            $localFile = fopen($path, 'w+');
+            fwrite($localFile, $file->getContent());
             fclose($localFile);
         } catch (\Exception $e) {
-            throw new \Exception("Error Saving File ".$this->fullPath, $e);
+            throw new \Exception('Error Saving File ' . $path, $e);
         }
     }
 
@@ -40,16 +42,16 @@ class LFSAdapter
 //    {
 //        // TODO: Implement move() method.
 //    }
-//
-//    public function copy(File $file, $location)
-//    {
-//        if (!$this->isDirectory($location)) {
-//            // throw
-//        }
-//        $filename = $file->getRealName().'-copy'.$file->getExtension();
-//        $this->addFile(new File($location.$filename));
-//    }
-//
+
+    public function copy(File $file, $location)
+    {
+        if (!$this->isDirectory($location)) {
+            // throw
+        }
+        $filename = $file->getRealName() . '-copy' . $file->getExtension();
+        $this->addFile(new File($location . $filename));
+    }
+
 //    public function persist(FileCommandSet $commandSet)
 //    {
 //        $this->handle($commandSet);
@@ -88,12 +90,12 @@ class LFSAdapter
 //    {
 //        $this->ftpClient->removeDirectory($directoryName);
 //    }
-//
-//    public function getFileList()
-//    {
-//        $this->ftpClient->listDirectory($this->directory);
-//    }
-//
+
+    public function getFileList(string $directory)
+    {
+        return \var_dump(glob($directory), $directory);
+    }
+
 //    public function getFile($filename)
 //    {
 //        $this->ftpClient->fget();
@@ -128,10 +130,12 @@ class LFSAdapter
     public function handle(CommandRecorder $commandRecorder)
     {
         foreach ($commandRecorder->getRecordedCommands() as $command) {
-            switch (true)
-            {
+            switch (true) {
                 case $command->getAction() === FileAction::CREATE:
-                    $this->addFile($command->getFile());
+                    $this->addFile($command->getAsset());
+                    break;
+                case $command->getAction() === DirAction::READ_DIR:
+                    $this->getFileList($command->getAsset());
                     break;
             }
         }
