@@ -1,0 +1,29 @@
+{
+  "name": "thijzer/file-manager",
+  "authors": [
+    {
+      "name": "Thijs De Paepe",
+      "email": "thijs.dp@gmail.com"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "": "src/",
+      "Tests\\": "Tests/"
+    }
+  },
+  "require-dev": {
+    "phpspec/phpspec": "^5.1",
+    "phpunit/phpunit": "^8.2"
+  },
+  "scripts": {
+    "test": [
+      "@clearCache",
+      "phpunit",
+      "phpspec run"
+    ],
+    "clearCache": "rm -rf var/cache/*"
+  }
+}
