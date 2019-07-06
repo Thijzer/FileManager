@@ -2,11 +2,11 @@
 scenario's
 
 
-$phpFs = PhpFsAdapter($settings);
+$adapter = PhpFsAdapter($settings);
 
 $path = __DIR__;
 
-$fm = new FileManager($phpFs, $path);
+$fm = new FileManager($adapter, $path);
 
 // File
 
@@ -14,8 +14,6 @@ $fm->moveFile
 $fm->addFile
 $fm->removeFile
 $fm->getFile
-$fm->getFiles
-$fm->find
 $fm->copyFile
 
 // DIR
@@ -25,10 +23,7 @@ $fm->addDir
 $fm->removeDir
 $fm->renameDir
 $fm->readDir
-
 $fm->findInDir
-
-
 
 // issues
 
