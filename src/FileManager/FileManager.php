@@ -2,6 +2,7 @@
 
 namespace FileManager;
 
+use Criteria\FSCriteria;
 use File\File;
 use File\FileCollection;
 use File\FilePathResolver;
@@ -49,9 +50,9 @@ class FileManager
         return $this->resolver->resolve($command);
     }
 
-    public function findFiles(...$fileList): FileCollection
+    public function findFiles(FSCriteria $criteria = null): FileCollection
     {
-        $this->recorder->record($command = DirCommand::scanDir($fileList));
+        $this->recorder->record($command = DirCommand::scanDir($criteria ?? new FSCriteria()));
         $this->persist();
 
         return $this->resolver->resolve($command);

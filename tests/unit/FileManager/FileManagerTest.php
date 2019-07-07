@@ -1,14 +1,7 @@
 <?php
-/*
- *  This file is property of
- *
- *  (c) Thijs De Paepe <thijs.dp@gmail.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
 
-namespace Tests\Induxx\Component\Utils;
+namespace Tests\FileManager;
+
 use File\File;
 use File\FilePath;
 use PHPUnit\Framework\TestCase;
@@ -38,20 +31,6 @@ class FileManagerTest extends TestCase
         $fm = new \FileManager\FileManager(__DIR__);
 
         $file = $fm->getFile('files/test.txt');
-
-        $this->assertTrue($file->getFilePath()->is('files/test.txt'));
-    }
-
-    /**
-     * @test
-     */
-    public function it_should_find_files_by_filename(): void
-    {
-        $fm = new \FileManager\FileManager(__DIR__);
-
-        $files = $fm->findFiles('files/');
-
-        $file = $files->current();
 
         $this->assertTrue($file->getFilePath()->is('files/test.txt'));
     }

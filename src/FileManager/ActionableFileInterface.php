@@ -2,6 +2,7 @@
 
 namespace FileManager;
 
+use Criteria\FSCriteria;
 use File\File;
 use File\FileCollection;
 use File\FilePath;
@@ -12,7 +13,7 @@ interface ActionableFileInterface
 
     public function getFile(FilePath $filename):? File;
 
-    public function findFiles(array $directoryList): FileCollection;
+    public function findFiles(FSCriteria $directoryList): FileCollection;
 
     public function addFile(File $file): void;
 

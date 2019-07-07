@@ -2,22 +2,24 @@
 
 namespace FileManager\Commands;
 
+use Criteria\FSCriteria;
+
 class DirCommand implements Command
 {
     private $action;
-    private $directory;
+    private $asset;
     private $resolution;
 
-    public function __construct(string $action, $directory, $resolution = null)
+    public function __construct(string $action, $asset, $resolution = null)
     {
-        $this->directory = $directory;
+        $this->asset = $asset;
         $this->action = $action;
         $this->resolution = $resolution;
     }
 
     public function getAsset()
     {
-        return $this->directory;
+        return $this->asset;
     }
 
     public function getResolution()
@@ -60,9 +62,9 @@ class DirCommand implements Command
         return new self(DirAction::READ_DIR, $dir);
     }
 
-    public static function scanDir(array $dir): self
+    public static function scanDir(FSCriteria $criteria): self
     {
-        return new self(DirAction::SCAN_DIR, $dir);
+        return new self(DirAction::SCAN_DIR, $criteria);
     }
 
     public static function isDir($dir): self

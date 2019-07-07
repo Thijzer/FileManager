@@ -21,10 +21,11 @@ class File extends \SPLFileInfo
 {
     private $filePath;
     private $fileContent;
+    private $filename;
 
     public function __construct(FilePath $filePath)
     {
-        parent::__construct($filePath->getPath());
+        parent::__construct(__DIR__.DIRECTORY_SEPARATOR.$filePath->getPath());
 
         $this->filePath = $filePath;
         $this->fileContent = new FileContent($this);
@@ -33,6 +34,11 @@ class File extends \SPLFileInfo
     public function getPath(): string
     {
         return $this->filePath->getPath();
+    }
+
+    public function getName(): string
+    {
+        return $this->getFilename();
     }
 
     public function getContent(): string

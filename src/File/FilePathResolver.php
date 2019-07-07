@@ -30,6 +30,16 @@ class FilePathResolver
         ]);
     }
 
+    public function rootDirectory(): string
+    {
+        return $this->fileManager->getRoot();
+    }
+
+    public function unResolveFromSpl(\SplFileInfo $fileInfo)
+    {
+        return str_replace($this->fileManager->getRoot(), '',  $fileInfo->getRealPath());
+    }
+
     public function resolveDirectory($directory): string
     {
         return implode(DIRECTORY_SEPARATOR, [

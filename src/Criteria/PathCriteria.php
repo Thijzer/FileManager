@@ -40,10 +40,10 @@ class PathCriteria
     public function toArray(): array
     {
         return [
-            'get' => $this->get,
-            'has' => $this->has,
-            'notHas' => $this->notHas,
-            'depth' => $this->depth,
+            'get' => array_values($this->get),
+            'has' => array_values($this->has),
+            'notHas' => array_values($this->notHas),
+            'depth' => array_values($this->depth),
         ];
     }
 }

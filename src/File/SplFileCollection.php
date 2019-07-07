@@ -2,30 +2,25 @@
 
 namespace File;
 
-class FileCollection implements \Countable, \IteratorAggregate
+class SplFileCollection implements \Countable, \IteratorAggregate
 {
-    private $items = [];
+    private $items;
 
     public function __construct(array $items = [])
     {
         $this->addFiles($items);
     }
 
-    public function add(File $item): void
+    public function add($item): void
     {
-        $this->items[$item->getFilePath()->getHash()] = $item;
+        $this->items[] = $item;
     }
 
-    public function addFiles(array $items): void
+    public function addFiles($items): void
     {
         foreach ($items as $item) {
             $this->add($item);
         }
-    }
-
-    public function remove(File $file): void
-    {
-        unset($this->items[$file->getFilePath()->getHash()]);
     }
 
     /**

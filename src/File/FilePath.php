@@ -4,6 +4,12 @@ namespace File;
 
 use Utils\Crc32bHashGenerator;
 
+/**
+ * Class FilePath
+ * FilePath should be initialized locally
+ * but functions as relative to the root file manager
+ * @package File
+ */
 class FilePath
 {
     private $path;
@@ -11,6 +17,15 @@ class FilePath
     public function __construct(...$path)
     {
         $this->path = implode(DIRECTORY_SEPARATOR, $path);
+    }
+
+    /**
+     * - within local contraints
+     *
+     */
+    public function getAbsolutePath()
+    {
+
     }
 
     public function getPath(): string

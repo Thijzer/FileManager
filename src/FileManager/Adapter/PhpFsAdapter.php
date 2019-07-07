@@ -2,11 +2,14 @@
 
 namespace FileManager\Adapter;
 
+use Criteria\Filter\FilterBuilder;
+use Criteria\FSCriteria;
 use File\File;
 use File\FileCollection;
 use File\FileCreator;
 use File\FilePath;
 use File\FilePathResolver;
+use File\SplFileCollection;
 
 class PhpFsAdapter implements FSAdapter
 {
@@ -71,25 +74,60 @@ class PhpFsAdapter implements FSAdapter
         return FileCreator::createAdaptableFile($filename, $this);
     }
 
-    public function findFiles($directoryList): FileCollection
+    public function findFiles(FSCriteria $criteria): FileCollection
     {
-        $files = new FileCollection();
-        foreach ($directoryList as $directory) {
-            foreach ($this->scan($directory) as $filename) {
-                $files->add(new File(new FilePath($directory.$filename)));
-            }
-        }
-
-        return $files;
+        return $this->scan(null, FilterBuilder::buildFromCriteria($criteria));
     }
 
-    private function scan(string $directory): array
+    private function scan(string $directory = null, array $filterTypes = []): FileCollection
     {
-        $directory = $this->pathResolver->resolveDirectory($directory);
+        $directory = null === $directory ?
+            $this->pathResolver->rootDirectory() :
+            $this->pathResolver->resolveDirectory($directory)
+        ;
 
-        return array_diff(array_filter(scandir($directory, SCANDIR_SORT_ASCENDING), function ($item) use ($directory) {
-            return !is_dir($directory.$item);
-        }), []);
+        $files = new SplFileCollection();
+        $this->recursiveScan($directory, [], $files);
+        $fileSet = [];
+        // we have all files in a collection
+
+        // Filter AND loop
+        foreach ($filterTypes as $name => $filters) {
+            // Filter OR loop
+            $splFiles = [];
+            $newFiles = [];
+            foreach ($filters as $filter) {
+                /** @var \SplFileInfo $file */
+                foreach ($files as $splFile) {
+                    $file = new File(new FilePath($this->pathResolver->unResolveFromSpl($splFile)));
+                    if (true === $filter($file)) {
+                        $splFiles[] = $splFile;
+                        $newFiles[] = $file;
+                    }
+                }
+            }
+
+            // collect matches
+            $fileSet[] = $newFiles;
+
+            // reduce Collection based on found matches
+            $files = new SplFileCollection($splFiles);
+        }
+
+        return new FileCollection(end($fileSet));
+    }
+
+    private function recursiveScan(string $rootDirectory, array $filters, SplFileCollection $files)
+    {
+        $iterator = new \FilesystemIterator($rootDirectory);
+        /** @var \SplFileInfo $fileinfo */
+        foreach ($iterator as $fileinfo) {
+            if ($fileinfo->isDir()) {
+                $this->recursiveScan($fileinfo, $filters, $files);
+                continue;
+            }
+            $files->add($fileinfo);
+        }
     }
 
     public function addFile(File $file): void

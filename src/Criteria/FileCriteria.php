@@ -48,12 +48,11 @@ class FileCriteria
     public function toArray(): array
     {
         return [
-            'contentContains' => $this->contentContains,
-            'contentNotContains' => $this->contentNotContains,
-            'type' => $this->type,
-            'size' => $this->size,
-            'data' => $this->date,
-
+            'contentContains' => array_values($this->contentContains),
+            'contentNotContains' => array_values($this->contentNotContains),
+            'type' => array_values($this->type),
+            'size' => array_values($this->size),
+            'data' => array_values($this->date),
         ];
     }
 }
