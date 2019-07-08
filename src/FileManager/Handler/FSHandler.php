@@ -30,13 +30,13 @@ class FSHandler
                     break;
                 case $command->getAction() === FileAction::GET_FILE:
                     $file = $this->adapter->getFile($command->getAsset());
-                    $this->resolver->addSolution($command, $file);
+                    $this->resolver->addCommands($command, $file);
                     break;
                 case $command->getAction() === FileAction::RENAME:
                     $this->adapter->renameFile($command->getAsset(), $command->getResolution());
                     break;
                 case $command->getAction() === FileAction::IS_FILE:
-                    $this->resolver->addSolution($command, $this->adapter->isFile($command->getAsset()));
+                    $this->resolver->addCommands($command, $this->adapter->isFile($command->getAsset()));
                     break;
                 case $command->getAction() === FileAction::COPY:
                     $this->adapter->copyFile($command->getAsset(), $command->getResolution());
@@ -50,7 +50,7 @@ class FSHandler
 
                 // DIR
                 case $command->getAction() === DirAction::SCAN_DIR;
-                    $this->resolver->addSolution($command, $this->adapter->findFiles($command->getAsset()));
+                    $this->resolver->addCommands($command, $this->adapter->findFiles($command->getAsset()));
                     break;
 
                 case $command->getAction() === DirAction::READ_DIR:

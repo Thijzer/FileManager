@@ -12,30 +12,43 @@ use Utils\Crc32bHashGenerator;
  */
 class FilePath
 {
-    private $path;
-
-    public function __construct(...$path)
-    {
-        $this->path = implode(DIRECTORY_SEPARATOR, $path);
-    }
+    /**
+     * @var string
+     */
+    private $relativePath;
+    /**
+     * @var string
+     */
+    private $rootDirectory;
 
     /**
-     * - within local contraints
+     * FilePath constructor.
      *
+     * @param string $relativePath
+     * @param string|null $rootDirectory
      */
-    public function getAbsolutePath()
+    public function __construct(string $relativePath, string $rootDirectory = null)
     {
+        $this->relativePath = $relativePath;
+        $this->rootDirectory = rtrim($rootDirectory, DIRECTORY_SEPARATOR);
+    }
 
+    public function getAbsolutePath(): string
+    {
+        return implode(DIRECTORY_SEPARATOR, [
+            $this->rootDirectory,
+            $this->relativePath,
+        ]);
     }
 
     public function getPath(): string
     {
-        return $this->path;
+        return $this->relativePath;
     }
 
     public function getHash(): string
     {
-        return Crc32bHashGenerator::generate($this->path);
+        return Crc32bHashGenerator::generate($this->getPath());
     }
 
     public function isEqual(FilePath $filePath): bool
@@ -50,6 +63,6 @@ class FilePath
 
     public function __toString(): string
     {
-        return $this->path;
+        return $this->getPath();
     }
 }

@@ -21,14 +21,24 @@ class File extends \SPLFileInfo
 {
     private $filePath;
     private $fileContent;
-    private $filename;
 
     public function __construct(FilePath $filePath)
     {
-        parent::__construct(__DIR__.DIRECTORY_SEPARATOR.$filePath->getPath());
+        parent::__construct($filePath->getAbsolutePath());
 
         $this->filePath = $filePath;
         $this->fileContent = new FileContent($this);
+    }
+
+    // todo we need to change the passing of static construction of SPlFileinfo
+    // so we can get more info like / absolute path / relative path / filename / date time / size / type
+    // cheap operation without I/O calls should be collected
+    // expensive operations should be done by the adapter
+    public static function createFromSpfFileInfo(\SplFileInfo $fileInfo, string $rootDirectory = null): self
+    {
+        $relativePath = str_replace($rootDirectory, '',  $fileInfo->getRealPath());
+
+        return new self(new FilePath($relativePath, $rootDirectory));
     }
 
     public function getPath(): string

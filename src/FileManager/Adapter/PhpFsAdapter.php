@@ -99,7 +99,7 @@ class PhpFsAdapter implements FSAdapter
             foreach ($filters as $filter) {
                 /** @var \SplFileInfo $file */
                 foreach ($files as $splFile) {
-                    $file = new File(new FilePath($this->pathResolver->unResolveFromSpl($splFile)));
+                    $file = File::createFromSpfFileInfo($splFile, $this->pathResolver->rootDirectory());
                     if (true === $filter($file)) {
                         $splFiles[] = $splFile;
                         $newFiles[] = $file;
@@ -146,6 +146,16 @@ class PhpFsAdapter implements FSAdapter
     public function getContent(File $file): string
     {
         return file_get_contents($this->pathResolver->resolveFile($file));
+    }
+
+    public function getSize(File $file): string
+    {
+        return $file->getSize();
+    }
+
+    public function getType(File $file): string
+    {
+        return $file->getType();
     }
 
     public function addFiles(FileCollection $files): void

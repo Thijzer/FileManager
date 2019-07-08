@@ -18,7 +18,7 @@ class FilePathResolver
     {
         return implode(DIRECTORY_SEPARATOR, [
             $this->fileManager->getRoot(),
-            $file->getFilePath()->getPath()
+            $file->getPath()
         ]);
     }
 
@@ -33,11 +33,6 @@ class FilePathResolver
     public function rootDirectory(): string
     {
         return $this->fileManager->getRoot();
-    }
-
-    public function unResolveFromSpl(\SplFileInfo $fileInfo)
-    {
-        return str_replace($this->fileManager->getRoot(), '',  $fileInfo->getRealPath());
     }
 
     public function resolveDirectory($directory): string

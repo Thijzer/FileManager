@@ -4,16 +4,18 @@ namespace FileManager\Commands;
 
 class CommandResolver
 {
-    private $resolutions = [];
-    public function addSolution(Command $command, $resolution): void
+    private $commands = [];
+
+    public function addCommands(Command $command, $resolution): void
     {
-        $this->resolutions[$command->getReference()] = $resolution;
+        $this->commands[$command->getReference()] = $resolution;
     }
+
     public function resolve(Command $command)
     {
-        $resolution = $this->resolutions[$command->getReference()];
+        $resolution = $this->commands[$command->getReference()];
 
-        unset($this->resolutions[$command->getReference()]);
+        unset($this->commands[$command->getReference()]);
 
         return $resolution;
     }
