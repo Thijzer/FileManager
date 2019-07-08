@@ -71,7 +71,7 @@ class PhpFsAdapter implements FSAdapter
             return null;
         }
 
-        return FileCreator::createAdaptableFile($filename, $this);
+        return File::createAdaptableFile($this, $filename, $this->pathResolver->rootDirectory());
     }
 
     public function findFiles(FSCriteria $criteria): FileCollection

@@ -14,6 +14,8 @@
 
 namespace File;
 
+use FileManager\Adapter\FSAdapter;
+
 /**
  * @author Thijs De Paepe <thijs.dp@gmail.com>
  */
@@ -39,6 +41,16 @@ class File extends \SPLFileInfo
         $relativePath = str_replace($rootDirectory, '',  $fileInfo->getRealPath());
 
         return new self(new FilePath($relativePath, $rootDirectory));
+    }
+
+    public static function createAdaptableFile(FSAdapter $adapter, FilePath $filePath, string $rootDirectory = null): self
+    {
+        $relativePath = str_replace($rootDirectory, '',  $filePath->getPath());
+
+        $file = new self(new FilePath($relativePath, $rootDirectory));
+        $file->getFileContent()->setAdapter($adapter);
+
+        return $file;
     }
 
     public function getPath(): string
