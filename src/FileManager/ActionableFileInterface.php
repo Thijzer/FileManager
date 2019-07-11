@@ -11,7 +11,7 @@ interface ActionableFileInterface
 {
     public function isFile(FilePath $filename): bool;
 
-    public function getFile(FilePath $filename):? File;
+    public function getFile(FilePath $filePath):? File;
 
     public function findFiles(FSCriteria $directoryList): FileCollection;
 

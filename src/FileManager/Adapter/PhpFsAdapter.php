@@ -6,7 +6,6 @@ use Criteria\Filter\FilterBuilder;
 use Criteria\FSCriteria;
 use File\File;
 use File\FileCollection;
-use File\FileCreator;
 use File\FilePath;
 use File\FilePathResolver;
 use File\SplFileCollection;
@@ -65,13 +64,13 @@ class PhpFsAdapter implements FSAdapter
         return file_exists($this->pathResolver->resolvePath($filename));
     }
 
-    public function getFile(FilePath $filename):? File
+    public function getFile(FilePath $filePath):? File
     {
-        if (!$this->isFile($filename)) {
+        if (!$this->isFile($filePath)) {
             return null;
         }
 
-        return File::createAdaptableFile($this, $filename, $this->pathResolver->rootDirectory());
+        return File::createAdaptableFile($this, $filePath, $this->pathResolver->rootDirectory());
     }
 
     public function findFiles(FSCriteria $criteria): FileCollection
